@@ -6,8 +6,8 @@ import {ScriptManager, Federated} from '@callstack/repack/client';
 
 LogBox.ignoreLogs(['Warning: ...']);
 
-// MiniApp Remote config
-const appUrl = 'https://storage.googleapis.com/mini_app';
+// MiniApp Remote config (Hosted on Vercel)
+const appUrl = 'https://demo-file-server.onrender.com';
 const updateFile = 'update.json';
 let latestVersion = '1.0.0';
 
@@ -38,9 +38,8 @@ const initializeScriptManager = async () => {
   // Setup the URL resolver with the fetched latest version
   const resolveURL = Federated.createURLResolver({
     containers: {
-      //MiniApp: 'http://localhost:9000/[name][ext]',
+      // MiniApp hosted on Vercel
       MiniApp: `${appUrl}/${latestVersion}/${Platform.OS}/[name][ext]`,
-      news: `https://github.com/callstack/news-mini-app-showcase/releases/download/news-${Platform.OS}%400.0.1/[name][ext]`,
     },
   });
 
