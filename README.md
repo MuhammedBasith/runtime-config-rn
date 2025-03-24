@@ -1,4 +1,4 @@
-# run time conifig
+# run time config
 
 1. Clone the repository:
 
