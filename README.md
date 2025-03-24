@@ -1,12 +1,4 @@
-# Super App Example
-
-Follow these steps to set up the project on your local machine.
-
-### Prerequisites
-
-- Make sure you have the latest version of `node` and `yarn` installed on your system. Please note that this project uses `yarn@3.x.x`, and not the classic version.
-
-### Installation
+# run time conifig
 
 1. Clone the repository:
 
